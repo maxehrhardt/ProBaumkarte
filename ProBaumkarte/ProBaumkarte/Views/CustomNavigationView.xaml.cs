@@ -9,10 +9,14 @@ using Xamarin.Forms.Xaml;
 
 namespace ProBaumkarte.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CustomNavigationView : ContentPage
+    public partial class CustomNavigationView : NavigationPage
     {
-        public CustomNavigationView()
+        public CustomNavigationView() : base()
+        {
+            InitializeComponent();
+        }
+
+        public CustomNavigationView(Page root) : base(root)
         {
             InitializeComponent();
         }

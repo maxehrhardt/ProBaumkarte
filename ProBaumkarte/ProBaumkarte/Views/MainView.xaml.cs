@@ -9,7 +9,6 @@ using Xamarin.Forms.Xaml;
 
 namespace ProBaumkarte.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainView : ContentPage
     {
         public MainView()
